@@ -6,5 +6,11 @@
   background: url(0af93e321bbf81518ea4.png);
 }
 
+/*!**************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/scss-hello.scss ***!
+  \**************************************************************************************************************/
+body {
+  background-color: black;
+}
 
-/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiaW5kZXguY3NzIiwibWFwcGluZ3MiOiI7OztBQUFBO0VBQ0k7RUFDQTtBQUNKIiwic291cmNlcyI6WyJ3ZWJwYWNrOi8vd2VicGFjay1kZW1vLy4vc3JjL2hlbGxvLmxlc3MiXSwic291cmNlc0NvbnRlbnQiOlsiLmhlbGxvIHtcbiAgICBjb2xvcjogZ3JlZW4gIWltcG9ydGFudDtcbiAgICBiYWNrZ3JvdW5kOiB1cmwoXCIuL2ljb24ucG5nXCIpO1xuICB9XG4gICJdLCJuYW1lcyI6W10sInNvdXJjZVJvb3QiOiIifQ==*/
+/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiaW5kZXguY3NzIiwibWFwcGluZ3MiOiI7OztBQUFBO0VBQ0k7RUFDQTtBQUNKOzs7OztBQ0RBO0VBQ0UsdUJBSFc7QUFFYixDIiwic291cmNlcyI6WyJ3ZWJwYWNrOi8vd2VicGFjay1kZW1vLy4vc3JjL2hlbGxvLmxlc3MiLCJ3ZWJwYWNrOi8vd2VicGFjay1kZW1vLy4vc3JjL3Njc3MtaGVsbG8uc2NzcyJdLCJzb3VyY2VzQ29udGVudCI6WyIuaGVsbG8ge1xuICAgIGNvbG9yOiBncmVlbiAhaW1wb3J0YW50O1xuICAgIGJhY2tncm91bmQ6IHVybChcIi4vaWNvbi5wbmdcIik7XG4gIH1cbiAgIiwiJGJvZHktY29sb3I6IGJsYWNrO1xuXG5ib2R5IHtcbiAgYmFja2dyb3VuZC1jb2xvcjogJGJvZHktY29sb3I7XG59Il0sIm5hbWVzIjpbXSwic291cmNlUm9vdCI6IiJ9*/
