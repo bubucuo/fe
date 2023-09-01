@@ -1,0 +1,10 @@
+{
+    "include": [
+        "**/*.ts",
+    ],
+    "compilerOptions": {
+        "outFile": "dist/bundle.js",
+        "removeComments": true,
+        "module": "AMD",
+    }
+}

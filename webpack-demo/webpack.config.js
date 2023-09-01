@@ -7,18 +7,18 @@ module.exports = {
   // entry: "./src/index.js",
   entry: {
     // index: "./src/index.js",
-    print: "./src/print.js",
+    // print: "./src/print.js",
     // another: "./src/another-module.js",
 
     index: {
-      import: "./src/index.js",
-      dependOn: "shared",
+      import: "./src/index.ts",
+      // dependOn: "shared",
     },
-    another: {
-      import: "./src/another-module.js",
-      dependOn: "shared",
-    },
-    shared: "lodash",
+    // another: {
+    //   import: "./src/another-module.js",
+    //   dependOn: "shared",
+    // },
+    // shared: "lodash",
   },
   output: {
     // filename: "main.js",
@@ -58,12 +58,23 @@ module.exports = {
           "sass-loader",
         ],
       },
-
+      { test: /\.([cm]?ts|tsx)$/, loader: "ts-loader" },
       {
         test: /\.(png|svg|jpg|jpeg|gif)$/i,
         type: "asset/resource",
       },
     ],
+  },
+
+  resolve: {
+    // Add `.ts` and `.tsx` as a resolvable extension.
+    extensions: [".ts", ".tsx", ".js"],
+    // Add support for TypeScripts fully qualified ESM imports.
+    extensionAlias: {
+      ".js": [".js", ".ts"],
+      // ".cjs": [".cjs", ".cts"],
+      // ".mjs": [".mjs", ".mts"],
+    },
   },
   plugins: [
     new HtmlWebpackPlugin({
