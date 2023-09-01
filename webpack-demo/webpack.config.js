@@ -20,11 +20,6 @@ module.exports = {
     },
     shared: "lodash",
   },
-  optimization: {
-    splitChunks: {
-      chunks: "all",
-    },
-  },
   output: {
     // filename: "main.js",
     // filename: "bundle.js",
@@ -37,8 +32,8 @@ module.exports = {
     rules: [
       {
         test: /\.css$/i,
-        // use: [MiniCssExtractPlugin.loader, "style-loader", "css-loader"],
-        use: [MiniCssExtractPlugin.loader, "css-loader"],
+        // use: ["style-loader", "css-loader"],
+        use: [MiniCssExtractPlugin.loader, "css-loader"], // sy
       },
       {
         test: /\.(png|svg|jpg|jpeg|gif)$/i,
@@ -47,10 +42,10 @@ module.exports = {
     ],
   },
   plugins: [
-    new MiniCssExtractPlugin(),
-    // 可以修改html页面title
     new HtmlWebpackPlugin({
-      title: "Development",
+      template: "./index.html",
     }),
+    new MiniCssExtractPlugin(), // sy
   ],
+  devtool: "inline-source-map",
 };
